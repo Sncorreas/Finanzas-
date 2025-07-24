@@ -1,199 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malla Finanzas</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #ffe4c4; /* naranja suave tipo pastel */
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px 10px 20px;
-    }
-
-    header h1 {
-      font-size: 3em;
-      color: #b34700; /* anaranjado más fuerte */
-      font-style: italic;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-      margin-bottom: 0;
-    }
-
-    header h2 {
-      font-size: 1.3em;
-      color: #7b4a27; /* cafecito suave */
-      margin-top: 5px;
-    }
-
-    header h2 span {
-      font-size: 1.5em;
-    }
-
-    .semestres {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .semestre {
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding: 20px;
-      transition: transform 0.2s ease-in-out;
-    }
-
-    .semestre:hover {
-      transform: scale(1.03);
-    }
-
-    .semestre h3 {
-      background-color: #ffa366;
-      color: white;
-      padding: 10px;
-      border-radius: 10px;
-      text-align: center;
-      margin: -20px -20px 15px -20px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    li {
-      padding: 5px 0;
-      border-bottom: 1px dotted #ddd;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #999;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <h1>Malla Finanzas</h1>
-    <h2>✨ Tú puedes con todo <span>🥺❤️</span> ✨</h2>
+    <p class="motivacion">Tú puedes con TODO 🥺❤️</p>
   </header>
 
-  <div class="semestres">
+  <main>
 
-    <div class="semestre">
-      <h3>1er Semestre</h3>
+    <section class="semestre">
+      <h2>Primer Semestre</h2>
       <ul>
-        <li>Conocimiento, Palabra y Cambio Social</li>
-        <li>Matemática I</li>
-        <li>Contabilidad Básica</li>
-        <li>Fundamentos de Administración</li>
-        <li>Entorno Socioeconómico</li>
-        <li>Introducción a la Microeconomía</li>
+        <li class="materia">Conocimiento, Palabra y Cambio Social</li>
+        <li class="materia">Matemática I</li>
+        <li class="materia">Contabilidad Básica</li>
+        <li class="materia">Introducción a la Microeconomía</li>
+        <li class="materia">Fundamentos de Administración</li>
+        <li class="materia">Entorno Socioeconómico</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="semestre">
-      <h3>2do Semestre</h3>
+    <section class="semestre">
+      <h2>Segundo Semestre</h2>
       <ul>
-        <li>Fundamentos de Investigación</li>
-        <li>Estadística I</li>
-        <li>Fundamentos de Contabilidad de Costos</li>
-        <li>Pensamiento Creativo e Innovación</li>
-        <li>Optimización Aplicada a la Administración y Economía</li>
-        <li>Introducción a la Macroeconomía</li>
+        <li class="materia">Fundamentos de Investigación</li>
+        <li class="materia">Estadística I</li>
+        <li class="materia">Fundamentos de Contabilidad de Costos</li>
+        <li class="materia">Pensamiento Creativo e Innovación</li>
+        <li class="materia">Optimización Aplicada a la Administración y Economía</li>
+        <li class="materia">Introducción a la Macroeconomía</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="semestre">
-      <h3>3er Semestre</h3>
+    <section class="semestre">
+      <h2>Tercer Semestre</h2>
       <ul>
-        <li>Jesucristo y Aprendizajes Vitales</li>
-        <li>Herramientas de Programación para los Negocios</li>
-        <li>Contabilidad Intermedia</li>
-        <li>Marketing y Ecosistema Digital</li>
-        <li>Estadística II</li>
-        <li>Análisis y Diagnóstico Financiero</li>
+        <li class="materia">Jesucristo y Aprendizajes Vitales</li>
+        <li class="materia"> Herramientas de programación para los negocios</li>
+        <li class="materia">Contabilidad intermedia</li>
+        <li class="materia">Marketing y ecosistema digital</li>
+        <li class="materia">Estadística II</li>
+        <li class="materia">Análisis y diagnóstico Financiero/li>
       </ul>
-    </div>
+    </section>
 
-    <div class="semestre">
-      <h3>4to Semestre</h3>
+    <section class="semestre">
+      <h2>Cuarto Semestre</h2>
       <ul>
-        <li>Legislación Empresarial</li>
-        <li>Investigación de Operaciones</li>
-        <li>Contabilidad Societaria</li>
-        <li>Gestión por Procesos</li>
-        <li>Administración Presupuestaria</li>
-        <li>Finanzas Operativas</li>
+        <li class="materia">Legislación Empresarial</li>
+        <li class="materia">Investigación de Operaciones</li>
+        <li class="materia">Contabilidad Societaria</li>
+        <li class="materia">Gestión por Procesos</li>
+        <li class="materia">Administración Presupuestaria</li>
+        <li class="materia">Finanzas Operativas</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="semestre">
-      <h3>5to Semestre</h3>
+    <section class="semestre">
+      <h2>Quinto Semestre</h2>
       <ul>
-        <li>Ética e Interculturalidad</li>
-        <li>Gestión del Talento Humano</li>
-        <li>Administración de Portafolios</li>
-        <li>Administración Estratégica</li>
-        <li>Tributación Aplicada</li>
-        <li>Decisiones de Financiamiento e Inversiones</li>
+        <li class="materia">Ética e Interculturalidad</li>
+        <li class="materia">Gestión del Talento Humano</li>
+        <li class="materia">Administración de Portafolios</li>
+        <li class="materia">Administración Estratégica</li>
+        <li class="materia">Tributación Aplicada</li>
+        <li class="materia">Decisiones de Financiamiento e Inversiones</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="semestre">
-      <h3>6to Semestre</h3>
+    <section class="semestre">
+      <h2>Sexto Semestre</h2>
       <ul>
-        <li>Ecología Integral</li>
-        <li>Instituciones Financieras del Sistema Nacional</li>
-        <li>Control de Gestión</li>
-        <li>Diseño y Evaluación de Proyectos</li>
-        <li>Seguros y Transferencia de Riesgos</li>
-        <li>Finanzas Internacionales</li>
+        <li class="materia">Ecología Integral</li>
+        <li class="materia">Instituciones Financieras del Sistema Nacional</li>
+        <li class="materia">Control de Gestión</li>
+        <li class="materia">Diseño y Evaluación de Proyectos</li>
+        <li class="materia">Seguros y Transferencia de Riesgos</li>
+        <li class="materia">Finanzas Internacionales</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="semestre">
-      <h3>7mo Semestre</h3>
+    <section class="semestre">
+      <h2>Septimo Semestre</h2>
       <ul>
-        <li>Seminario de Titulación</li>
-        <li>Asignatura 1 de Itinerario</li>
-        <li>Asignatura 2 de Itinerario</li>
-        <li>Analítica Financiera</li>
-        <li>Valoración de Renta Fija</li>
-        <li>Gestión de Riesgos Financieros</li>
+        <li class="materia">Seminario de Titulación</li>
+        <li class="materia">Asignatura 1 de Itinerario</li>
+        <li class="materia">Asignatura 2 de Itinerario</li>
+        <li class="materia">Analítica Financiera</li>
+        <li class="materia">Valoración de Renta Fija</li>
+        <li class="materia">Gestion de Riesgos Financieros</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="semestre">
-      <h3>8vo Semestre</h3>
+    <section class="semestre">
+      <h2>Octavo Semestre</h2>
       <ul>
-        <li>Integración Curricular</li>
-        <li>Asignatura 3 de Itinerario</li>
-        <li>Asignatura 4 de Itinerario</li>
-        <li>Habilidades Gerenciales</li>
-        <li>Innovación Financiera y Fintech</li>
-        <li>Valoración de Empresas</li>
+        <li class="materia">Integración Curricular</li>
+        <li class="materia">Asignatura 3 de Itinerario</li>
+        <li class="materia">Asignatura 4 de Itinerario</li>
+        <li class="materia">Habilidades Gerenciales</li>
+        <li class="materia">Innovación Financiera y Fintech</li>
+        <li class="materia">Valoración de Empresas</li>
       </ul>
-    </div>
+    </section>
+    
+    <section class="frase-final">
+      <p>Cada ramo aprobado te acerca más a cumplir tu sueño😊❤️✨</p>
+    </section>
 
-  </div>
-
-  <footer>
-    Cada ramo aprobado te acerca más a cumplir tu sueño😊✨
-<footer></footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
