@@ -19,21 +19,21 @@ header h1 {
   margin-bottom: 0;
 }
 
-header h2 {
+.motivacion {
   font-size: 1.3em;
   color: #7b4a27;
+  font-weight: bold;
   margin-top: 5px;
 }
 
-header h2 span {
-  font-size: 1.5em;
+main {
+  padding: 20px;
 }
 
 .semestres {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  padding: 20px;
   max-width: 1200px;
   margin: auto;
 }
@@ -50,7 +50,7 @@ header h2 span {
   transform: scale(1.03);
 }
 
-.semestre h3 {
+.semestre h2 {
   background-color: #ffa366;
   color: white;
   padding: 10px;
@@ -65,23 +65,28 @@ ul {
   margin: 0;
 }
 
-li {
+.materia {
   padding: 5px 0;
   border-bottom: 1px dotted #ddd;
-  cursor: pointer; /* para que se note que se puede clickear */
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Estilo para materias tachadas */
-li.tachado {
+.materia:hover {
+  background-color: #fff5ee;
+}
+
+.materia.tachado {
   text-decoration: line-through;
-  color: #999;
-  opacity: 0.7;
-  transition: color 0.3s, opacity 0.3s;
+  color: #aaa;
+  opacity: 0.6;
+  background-color: #f3e6d5;
 }
 
-footer {
+.frase-final {
   text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #999;
+  margin-top: 40px;
+  font-size: 1.2em;
+  color: #7b4a27;
+  font-weight: bold;
 }
