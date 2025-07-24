@@ -1,9 +1,10 @@
-window.onload = function() {
-  const materias = document.querySelectorAll('.semestre ul li');
+// Al hacer clic en una materia, se tacha o se destacha
+document.addEventListener("DOMContentLoaded", function () {
+  const materias = document.querySelectorAll(".materia");
 
-  materias.forEach(item => {
-    item.addEventListener('click', () => {
-      item.classList.toggle('tachado');
+  materias.forEach(materia => {
+    materia.addEventListener("click", () => {
+      materia.classList.toggle("tachado");
     });
   });
-}
+});
